@@ -1,6 +1,6 @@
 {
   "name": "@hewmanitarian/launchpad",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "type": "module",
   "scripts": {
@@ -27,6 +27,7 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@fontsource/quicksand": "^5.1.0"
+    "@fontsource/quicksand": "^5.1.0",
+    "pocketbase": "^0.22.1"
   }
 }
