@@ -1,6 +1,6 @@
 {
   "name": "@hewmanitarian/launchpad",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,8 +10,11 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "firebase deploy",
-    "all": "npm run generate && npm run deploy"
+    "tag": "git tag $npm_package_version && git push origin $npm_package_version",
+    "version": "echo $npm_package_name v$npm_package_version",
+    "deploy": "./deploy.sh",
+    "all": "npm run generate && npm run deploy",
+    "pb": "cd ./pocketbase && ./pocketbase serve"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
