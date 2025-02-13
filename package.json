@@ -1,6 +1,6 @@
 {
   "name": "@sixthkind/launchpad",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": true,
   "type": "module",
   "scripts": {
@@ -32,6 +32,6 @@
     "@fontsource/quicksand": "^5.1.0",
     "@vueform/nuxt": "^1.8.0",
     "luxon": "^3.5.0",
-    "pocketbase": "^0.22.1"
+    "pocketbase": "^0.25.0"
   }
 }
