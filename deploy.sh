@@ -9,7 +9,7 @@ set -a  # automatically export all variables
 source .env.production
 set +a  # stop automatically exporting
 
-ssh ${SERVER_USER}@${SERVER_HOST} << ENDSSH
+ssh ${SERVER_USER}@${SERVER_IP} << ENDSSH
   cd ${APP_PATH}
   rm package-lock.json
   git pull

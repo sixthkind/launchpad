@@ -5,7 +5,7 @@ Ready to go, self contained.
 
 ## Demo
 Theres a hosted demo of the template here:  
-[Demo](https://launchpad.hewmanitarian.com)   
+[Demo](https://launchpad.sixthkind.com)   
 
 Login:  
 demo@example.com  demo1234
