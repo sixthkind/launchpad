@@ -66,7 +66,7 @@
 </template>
 
 <script setup>
-  import { pb } from "#imports";
+  const pb = usePocketbase();
   const email = ref(pb.authStore.record?.email || '');
 
   const emailUsername = computed(() => email.value.split('@')[0]);

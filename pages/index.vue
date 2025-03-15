@@ -6,7 +6,10 @@ definePageMeta({
 </script>
 
 <template>
-  <CommonContainer>
-    <CommonHero></CommonHero>
-  </CommonContainer>
+  <ion-page>
+    <ion-content>
+      <CommonMain />
+      <CommonHero />
+    </ion-content>
+  </ion-page>
 </template>
