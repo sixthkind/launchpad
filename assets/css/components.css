@@ -37,3 +37,19 @@
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(12px);
 }
+
+.text-primary {
+  color: var(--ion-color-primary);
+}
+
+.text-secondary {
+  color: var(--ion-color-secondary);
+}
+
+.text-tertiary {
+  color: var(--ion-color-tertiary);
+}
+
+.border-primary {
+  border-color: var(--ion-color-primary);
+}

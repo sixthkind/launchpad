@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   css: [
     "~/assets/css/main.css",
     "~/assets/css/components.css",
+    "~/assets/css/ionic.css",
     "@fontsource/quicksand/400.css", 
     "@fontsource/quicksand/700.css"
   ],
@@ -17,8 +18,9 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    "@vueform/nuxt",
-    "@nuxt/ui"
+    "@vueform/nuxt", 
+    "@nuxt/ui", 
+    "@nuxtjs/ionic"
   ],
 
   colorMode: {

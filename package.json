@@ -18,7 +18,9 @@
     "pb": "cd ./pocketbase && ./pocketbase serve --http=0.0.0.0:8090"
   },
   "devDependencies": {
+    "@ionic/cli": "^7.2.0",
     "@nuxt/ui": "^2.21.0",
+    "@nuxtjs/ionic": "^0.16.0",
     "@tailwindcss/typography": "^0.5.10",
     "@types/luxon": "^3.4.2",
     "autoprefixer": "^10.4.16",
@@ -29,6 +31,9 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@capacitor/browser": "^7.0.0",
+    "@capacitor/core": "^7.0.1",
+    "@capacitor/ios": "^7.0.1",
     "@fontsource/quicksand": "^5.1.0",
     "@vueform/nuxt": "^1.8.0",
     "luxon": "^3.5.0",

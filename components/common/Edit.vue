@@ -5,7 +5,7 @@
       <div class="mb-4 flex justify-between">
         <div class="flex items-center gap-2">
           <button 
-            @click="goBack" 
+            @click="goBack(router)" 
             class="w-10 h-10 flex items-center justify-center rounded-full bg-white bg-opacity-90 hover:bg-opacity-70 transition-all"
           >
             <Icon name="lucide:chevron-left" size="1.4em" class="text-slate-500" />
@@ -64,9 +64,10 @@
 
 <script setup>
   import { ref } from 'vue';
-  import { pb, getSchema, Utils } from '#imports';
+  import { pb, getSchema, Utils, goBack } from '#imports';
   import { useRoute } from 'vue-router';
   const route = useRoute();
+  const router = useIonRouter();
   const isLoaded = ref(false);
   const isSuccess = ref(false);
   const isConfirm = ref(false);
@@ -113,10 +114,6 @@
       ...formSchema,
       button: { type: 'button', "button-label": `${id ? 'Save' : 'Add'}`, submits: true, class: 'ml-auto font-bold' }
     }
-  }
-
-  const goBack = () => {
-    window.history.back();
   }
 
   const toggleConfirm = () => {
@@ -215,7 +212,7 @@
     isSuccess.value = true;
     setTimeout(() => {
       isSuccess.value = false;
-      window.history.back();
+      goBack(router)
     }, 1000);
   }
 

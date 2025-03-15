@@ -3,7 +3,7 @@
   <div class="mb-4 flex justify-between">
     <div class="flex items-center gap-2">
       <button 
-        @click="goBack" 
+        @click="goBack(router)" 
         class="w-10 h-10 flex items-center justify-center rounded-full bg-white bg-opacity-90 hover:bg-opacity-70 transition-all"
       >
         <Icon name="lucide:chevron-left" size="1.4em" class="text-slate-500" />
@@ -64,8 +64,9 @@
 
 <script setup lang="ts">
   import { ref } from 'vue';
-  import { authUtils, pb } from '#imports';
+  import { authUtils, pb, goBack } from '#imports';
   import { useNuxtApp } from '#app';
+  const router = useIonRouter();
 
   const { $version } = useNuxtApp();
   const version = $version;
@@ -74,16 +75,12 @@
   const emailVerified = ref(pb.authStore.record?.verified || '');
   const isEditing = ref(false);
 
-  const goBack = () => {
-    window.history.back();
-  }
-
   const goEdit = () => {
-    window.location.href = '/edit/users/' + pb.authStore.record?.id;
+    router.push(`/edit/users/${pb.authStore.record?.id}`);
   }
 
   const reset = async () => {
-    window.location.href = '/auth/reset';
+    router.push('/auth/reset');
   }
 </script>
 
