@@ -14,8 +14,7 @@ class authUtils {
           email: input.email,
           password: input.password,
           passwordConfirm: input.password,
-          emailVisibility: true,
-          verified: true
+          emailVisibility: true
         });
   
         try {

@@ -8,7 +8,8 @@ Theres a hosted demo of the template here:
 [Demo](https://launchpad.sixthkind.com)   
 
 Login:  
-demo@example.com  demo1234
+demo@example.com
+demo1234
 
 ## Features
 
